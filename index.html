@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script async src="./index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <form class="search-form">
+                <input type="text" class="search-input" name="buscar" placeholder="Lavarropas...">
+                <button class="search-input">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <div class="content">
+        <h3 class="results">Resultados: <span class="results-count"></span></h3>
+        <div class="results">
+           
+        </div>
+    </div>
+    <template id="result-item-template">
+        <div class="result-item">
+            <img src="https://picsum.photos/200/300" alt="" class="result-item-img">
+            <div class="result-item-content">
+                <h4 class="result-item-title">titulo</h4>
+                <p class="result-item-condition">titulo</p>
+                <p class="result-item-sell-count">
+                    vendidos: <span class="result-item-sell-count-num"></span>
+                </p>
+            </div>
+            <div class="result-item-price">
+                $5245
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
